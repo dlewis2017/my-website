@@ -1,4 +1,4 @@
-# Advanced CSS-SCSS
+# Personal Website
 
 https://www.davidlewisma.com
 
