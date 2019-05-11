@@ -1,0 +1,40 @@
+/* Negates web browser defaults */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // defines what 1rem is; 1rem = 10px = 62.5%
+
+    // don't need phone respond because same as tab-port
+    // larger ones before smaller ones when Max Width being adjusted
+    @include respond (tab-land) { //width < 900?
+        font-size: 56.25%; // 1rem = 9px
+    }
+
+    @include respond (tab-port) { // width < 600?
+        font-size: 50%; // 1rem = 8px; (8px/16px * 1px/1rem) = 50%
+    }
+
+    @include respond (big-desktop) { // width > 1800? 
+        font-size: 75%; // 1rem = 12px
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond (tab-port) { 
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

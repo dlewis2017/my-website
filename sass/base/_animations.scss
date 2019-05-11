@@ -1,0 +1,52 @@
+/* Moving title in from the left */
+@keyframes moveInLeft {
+    /* start */
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    /* finish */
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Moving title in from the right */
+@keyframes moveInRight {
+    /* start */
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    /* finish */
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Moving button up */
+@keyframes moveInButton {
+    /* start */
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    /* finish */
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,30 @@
+.circle {
+    background-color: rgba($color-white, .8);
+    padding: 2.5rem;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+
+    @include respond(tab-port) {
+        padding: 2rem;
+
+    }
+
+    &__img {
+        margin-bottom: .5rem;
+        display: inline-block;
+        max-width: 100% !important;
+        max-height: 100%;
+        border-radius: 50%;
+
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+        box-shadow: 0 2.5rem 6rem rgba($color-black, .45);
+    }
+}
