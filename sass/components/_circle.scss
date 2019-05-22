@@ -1,7 +1,7 @@
 .circle {
     background-color: rgba($color-white, .8);
-    padding: 2.5rem;
-    border-radius: .3rem;
+    padding: .5rem;
+    border-radius: 50%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
 
@@ -11,12 +11,10 @@
     }
 
     &__img {
-        margin-bottom: .5rem;
         display: inline-block;
         max-width: 100% !important;
-        max-height: 100%;
-        border-radius: 50%;
-
+        max-height: auto;
+        border-radius: inherit;
 
         @include respond(tab-port) {
             margin-bottom: 0;

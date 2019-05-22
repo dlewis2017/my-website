@@ -2,16 +2,16 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem; //give same height as __side or perspective doesn't work; height collapses
+    height: 100vh; //give same height as __side or perspective doesn't work; height collapses
 
     &__side {
-        height: 52rem;
+        height: auto;
         transition: all .8s ease;
         font-size: 2rem;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        // width: 90vw;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: .3rem;
@@ -23,6 +23,7 @@
         }
         &--back {
             transform: rotateY(180deg);
+            background-color: white;
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
@@ -36,12 +37,12 @@
         }
     }
 
-    &:hover &__side--front {
-        transform: rotateY(-180deg);
-    }
-    &:hover &__side--back {
-        transform: rotateY(0);
-    }
+    // &:hover &__side--front {
+    //     transform: rotateY(-180deg);
+    // }
+    // &:hover &__side--back {
+    //     transform: rotateY(0);
+    // }
 
     //FRONT SIDE STYLING
     &__picture {

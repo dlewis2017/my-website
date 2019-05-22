@@ -61,6 +61,11 @@ body {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
+
+    &--alt {
+        @extend .heading-secondary;
+        background-image: linear-gradient(to right, $color-gray-light-1, $color-gray-dark-2);
+    }
 }
 
 .heading-tertiary {
