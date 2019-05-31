@@ -17,9 +17,9 @@
         <title> David Lewis | Media Art Portfolio </title>
     </head>
     <body>
-        <!-- <div class="card">
-            <div class="card__side card__side--front"> -->
-
+        <div class="card">
+            <!-- ARTIST CARD SIDE-->
+            <div class="card__side--front" id="card__side--front">
                 <!--Navigation-->
                 <div class="navigation">
                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -46,7 +46,7 @@
                     <div class="header__text-box">
                         <h1 class="heading-primary">
                             <span class="heading-primary--main u-margin-bottom-medium">David Lewis</span>
-                            <span class="heading-primary--sub">Developer ~ Artist</span>
+                            <span class="heading-primary--sub">Developer ~ <i id="currentProfile">Artist</i></span>
                         </h1>
                     </div>
                 </header>
@@ -208,21 +208,63 @@
                         </div>
                     </section>
                 </main>
-            <!-- </div>
-            <div class="card__side card__side--back">
-
+                <!-- FOOTER -->
+                <footer class="footer">
+                    <div class="row">
+                        <p class="footer__copyright">
+                            Built by <a href="https://github.com/dlewis2017" class="footer__link">David Lewis</a> --- Hosted by <a href="https://p2jde.com" class="footer__link">P2JDE</a>
+                        </p>
+                    </div>
+                </footer>
             </div>
-        </div> -->
+            <!-- DEVELOPER CARD SIDE -->
+            <div class="card__side--back hide" id="card__side--back">
+                <!-- HEADER -->
+                <header class="header">
+                    <div class="header__logo-box">
+                        <div class="header__logo icon-basic-laptop"></div>
+                    </div>
 
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="row">
-                <p class="footer__copyright">
-                    Built by <a href="https://github.com/dlewis2017" class="footer__link">David Lewis</a> --- Hosted by <a href="https://p2jde.com" class="footer__link">P2JDE</a>
-                </p>
+                    <div class="header__text-box">
+                        <h1 class="heading-primary">
+                            <span class="heading-primary--main u-margin-bottom-medium">David Lewis</span>
+                            <span class="heading-primary--sub"><i id="currentProfile">Developer</i> ~ Artist</span>
+                        </h1>
+                    </div>
+                </header>
+                <!-- MAIN -->
+                <main>
+                    <!-- ABOUT -->
+                    <section class="section-about" id="section-about-dev">
+                        <div class="u-center-text u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                About
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="profile">
+                                <figure class="profile__shape">
+                                    <img src="img/profile2.jpg" alt="Profile Picture" class="profile__img">
+                                    <figcaption class="profile__caption">David Lewis</figcaption>
+                                </figure>
+                                <div class="profile__text">
+                                    <p>Graduate of the University of Notre Dame '17 with a BS in Computer Science. Worked in federal consulting as a software developer for a year and a half. Contrinbuted to several teams that involved roles in web development, applications pipelining, and automated testings. Brief startup experience during last year of college with a focus in web development and teaching.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Git Hub Redirect-->
+                </main>
+                <!-- FOOTER -->
+                <footer class="footer">
+                    <div class="row">
+                        <p class="footer__copyright">
+                            Built by <a href="https://github.com/dlewis2017" class="footer__link">David Lewis</a> --- Hosted by <a href="https://p2jde.com" class="footer__link">P2JDE</a>
+                        </p>
+                    </div>
+                </footer>
             </div>
-        </footer>
-
+        </div>
     <script src="js/main.js"></script>
     </body>
 </html>

@@ -40,6 +40,10 @@
         height: 8rem;
         transition: transform .3s;
         
+        a:link, a:visited, a:active {
+            text-decoration: none;
+        }
+
         &:hover {
             cursor: pointer;
             transform: scale(1.3);
