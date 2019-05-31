@@ -18,8 +18,121 @@
     </head>
     <body>
         <div class="card">
-            <!-- ARTIST CARD SIDE-->
+            <!-- DEVELOPER CARD SIDE-->
             <div class="card__side--front" id="card__side--front">
+                <!--Navigation-->
+                <div class="navigation">
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle--dev">
+                    <label for="navi-toggle--dev" class="navigation__button">
+                        <span class="navigation__icon">&nbsp;</span>
+                    </label>
+                    <div class="navigation__background">&nbsp;</div>
+
+                    <nav class="navigation__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#section-about-dev" class="navigation__link">About Me</a></li>
+                            <li class="navigation__item"><a href="#section-portfolio--web" class="navigation__link">Web</a></li>
+                            <li class="navigation__item"><a href="#section-portfolio--unity" class="navigation__link">Unity</a></li>
+                            <li class="navigation__item"><a href="#section-portfolio--more" class="navigation__link">More . . .</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- HEADER -->
+                <header class="header">
+                    <div class="header__logo-box">
+                        <div class="header__logo icon-basic-laptop"></div>
+                    </div>
+
+                    <div class="header__text-box">
+                        <h1 class="heading-primary">
+                            <span class="heading-primary--main u-margin-bottom-medium">David Lewis</span>
+                            <span class="heading-primary--sub"><i id="currentProfile">Developer</i> ~ Artist</span>
+                        </h1>
+                    </div>
+                </header>
+                <!-- MAIN -->
+                <main>
+                    <!-- ABOUT -->
+                    <section class="section-about" id="section-about-dev">
+                        <div class="u-center-text u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                About
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="profile">
+                                <figure class="profile__shape">
+                                    <img src="img/profile2.jpg" alt="Profile Picture" class="profile__img">
+                                    <figcaption class="profile__caption">David Lewis</figcaption>
+                                </figure>
+                                <div class="profile__text">
+                                    <p>Graduate of the University of Notre Dame '17 with a BS in Computer Science. Worked in federal consulting as a software developer for a year and a half. Contrinbuted to several teams that involved roles in web development, applications pipelining, and automated testings. Brief startup experience during last year of college with a focus in web development and teaching.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Web -->
+                    <section class="section-portfolio--web" id="section-portfolio--web">
+                        <div class="u-center-text u-margin-bottom-medium">
+                            <h2 class="heading-secondary--alt">
+                                Web
+                            </h2>
+                        </div>
+                        <div class="section-portfolio--web__video">
+                            <video width="90%" height="auto" autoplay muted loop>
+                                <source src="img/CSS_Web.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </section>
+
+                    <!-- Unity -->
+                    <section class="section-portfolio--unity" id="section-portfolio--unity">
+                        <div class="bg-video">
+                            <video class="bg-video__content" autoplay muted loop>
+                                <source src="img/video.mp4" type="video/mp4">
+                                <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                            </video>
+                        </div>
+                        <div class="u-center-text u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                Unity
+                            </h2>
+                        </div>
+                        <div class="section-portfolio--unity__video">
+                            <video width="90%" height="auto" controls>
+                                <source src="unity_files/Unity_Rapid_Shot.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </section>
+                    <!--Git Hub Redirect-->
+                    <section class="section-portfolio--more" id="section-portfolio--more">
+                        <div class="u-center-text u-margin-bottom-medium">
+                            <h2 class="heading-secondary--alt">
+                                And More...
+                            </h2>
+                        </div>
+                        <div class="section-portfolio--more-items" id="section-portfolio--items">
+                            <h2 class="heading-tertiary"><a href="https://github.com/dlewis2017">GitHub</a></h2>
+                            <h2 class="heading-tertiary"><a href="https://www.linkedin.com/in/dlewis12/">LinkedIn</a></h2>
+                            <h2 class="heading-tertiary"><a href="/img/David Lewis Resume.pdf">Resume<i class="icon-basic-document"></i></a></h2>
+                        </div>
+                    </section>
+                </main>
+                <!-- FOOTER -->
+                <footer class="footer">
+                    <div class="row">
+                        <p class="footer__copyright">
+                            Built by <a href="https://github.com/dlewis2017" class="footer__link">David Lewis</a> --- Hosted by <a href="https://p2jde.com" class="footer__link">P2JDE</a>
+                        </p>
+                    </div>
+                </footer>
+            </div>
+            <!-- ARTIST CARD SIDE -->
+            <div class="card__side--back hide" id="card__side--back">
                 <!--Navigation-->
                 <div class="navigation">
                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -32,7 +145,6 @@
                         <ul class="navigation__list">
                             <li class="navigation__item"><a href="#section-about" class="navigation__link">About Me</a></li>
                             <li class="navigation__item"><a href="#section-portfolio--2d" class="navigation__link">2D</a></li>
-                            <li class="navigation__item"><a href="#section-portfolio--unity" class="navigation__link">Unity</a></li>
                             <li class="navigation__item"><a href="#section-portfolio--3d" class="navigation__link">3D</a></li>
                         </ul>
                     </nav>
@@ -142,8 +254,8 @@
                             </div>
                         </div>
                     </section>
-                    <!-- Unity -->
-                    <section class="section-portfolio--unity" id="section-portfolio--unity">
+                    <!-- 3D -->
+                    <section class="section-portfolio--3d" id="section-portfolio--3d">
                         <div class="bg-video">
                             <video class="bg-video__content" autoplay muted loop>
                                 <source src="img/video.mp4" type="video/mp4">
@@ -153,26 +265,6 @@
                         </div>
                         <div class="u-center-text u-margin-bottom-medium">
                             <h2 class="heading-secondary">
-                                Unity
-                            </h2>
-                        </div>
-                        <div class="section-portfolio--unity__video">
-                            <video width="90%" height="auto" controls>
-                                <source src="unity_files/Unity_Level1.mp4" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                        </div>
-                        <div class="section-portfolio--unity__video">
-                            <video width="90%" height="auto" controls>
-                                <source src="unity_files/Unity_Rapid_Shot.mp4" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                        </div>
-                    </section>
-                    <!-- 3D -->
-                    <section class="section-portfolio--3d" id="section-portfolio--3d">
-                        <div class="u-center-text u-margin-bottom-medium">
-                            <h2 class="heading-secondary--alt">
                                 3-D
                             </h2>
                         </div>
@@ -206,54 +298,18 @@
                                 </a>
                             </div>
                         </div>
-                    </section>
-                </main>
-                <!-- FOOTER -->
-                <footer class="footer">
-                    <div class="row">
-                        <p class="footer__copyright">
-                            Built by <a href="https://github.com/dlewis2017" class="footer__link">David Lewis</a> --- Hosted by <a href="https://p2jde.com" class="footer__link">P2JDE</a>
-                        </p>
-                    </div>
-                </footer>
-            </div>
-            <!-- DEVELOPER CARD SIDE -->
-            <div class="card__side--back hide" id="card__side--back">
-                <!-- HEADER -->
-                <header class="header">
-                    <div class="header__logo-box">
-                        <div class="header__logo icon-basic-laptop"></div>
-                    </div>
-
-                    <div class="header__text-box">
-                        <h1 class="heading-primary">
-                            <span class="heading-primary--main u-margin-bottom-medium">David Lewis</span>
-                            <span class="heading-primary--sub"><i id="currentProfile">Developer</i> ~ Artist</span>
-                        </h1>
-                    </div>
-                </header>
-                <!-- MAIN -->
-                <main>
-                    <!-- ABOUT -->
-                    <section class="section-about" id="section-about-dev">
-                        <div class="u-center-text u-margin-bottom-medium">
+                        <!-- <div class="u-center-text u-margin-bottom-medium">
                             <h2 class="heading-secondary">
-                                About
+                                Unity
                             </h2>
-                        </div>
-                        <div class="row">
-                            <div class="profile">
-                                <figure class="profile__shape">
-                                    <img src="img/profile2.jpg" alt="Profile Picture" class="profile__img">
-                                    <figcaption class="profile__caption">David Lewis</figcaption>
-                                </figure>
-                                <div class="profile__text">
-                                    <p>Graduate of the University of Notre Dame '17 with a BS in Computer Science. Worked in federal consulting as a software developer for a year and a half. Contrinbuted to several teams that involved roles in web development, applications pipelining, and automated testings. Brief startup experience during last year of college with a focus in web development and teaching.</p>
-                                </div>
-                            </div>
+                        </div> -->
+                        <div class="section-portfolio--unity__video">
+                            <video width="90%" height="auto" controls>
+                                <source src="unity_files/Unity_Level1.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
                         </div>
                     </section>
-                    <!--Git Hub Redirect-->
                 </main>
                 <!-- FOOTER -->
                 <footer class="footer">

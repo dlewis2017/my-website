@@ -14,8 +14,9 @@ $(document).ready(function() {
         }
     });
 
+    // for nav bar
     $('.navigation__item').click(function() {
-        $("#navi-toggle").prop("checked", false);
+        $(".navigation__checkbox").prop("checked", false);
     });
 
 });
