@@ -13,7 +13,28 @@ $(document).ready(function() {
             profile = !profile;
         }
     });
-
+    $('#otherProfile').click(function() {
+        if (!profile) {
+            $('#card__side--back').removeClass('hide');
+            $('#card__side--front').addClass('hide');
+            profile = !profile;
+        } else {
+            $('#card__side--front').removeClass('hide');
+            $('#card__side--back').addClass('hide');
+            profile = !profile;
+        }
+    });
+    $('#otherProfile--dev').click(function() {
+        if (!profile) {
+            $('#card__side--back').removeClass('hide');
+            $('#card__side--front').addClass('hide');
+            profile = !profile;
+        } else {
+            $('#card__side--front').removeClass('hide');
+            $('#card__side--back').addClass('hide');
+            profile = !profile;
+        }
+    });
     // for nav bar
     $('.navigation__item').click(function() {
         $(".navigation__checkbox").prop("checked", false);

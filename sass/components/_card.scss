@@ -12,6 +12,8 @@
 
     &__side {
         @extend .card;
+        // transition: all .8s ease;
+        // transform: rotateY(180deg);
         height: auto;
         transition: all .8s ease;
         // font-size: 2rem;
@@ -26,30 +28,24 @@
         overflow: hidden;
         &--front {
             @extend .card__side;
-            i {
-                color: red;
-            }
         }
         &--back {
             @extend .card__side;
-            i {
-                color: blue;
-            }
             .header {
                 background-image:linear-gradient(
                     to right bottom, 
-                    rgba($color-primary-light,.8),
-                    rgba($color-primary-dark,.8)),
-                url(../img/profile3.jpg);
+                    rgba($color-secondary-light,.8),
+                    rgba($color-secondary-dark,.8)),
+                url(../img/david_painting_BW.jpg);
 
                 @media  only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
                 only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), // safari 
                 only screen and (min-width: 125em) { // dots per inch; ',' is an 'or'
                 background-image:linear-gradient(
                     to right bottom, 
-                    rgba($color-primary-light,.8),
-                    rgba($color-primary-dark,.8)),
-                url(../img/profile3.jpg);
+                    rgba($color-secondary-light,.8),
+                    rgba($color-secondary-dark,.8)),
+                url(../img/david_painting_BW.jpg);
                 } 
             }
         }
