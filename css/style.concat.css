@@ -1233,7 +1233,7 @@ body {
       top: 3rem;
       right: 3rem; } }
 
-.navigation__background {
+.navigation__background, .navigation__background--art {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -1243,12 +1243,14 @@ body {
   background-image: radial-gradient(#70c2e2, #10536d);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  .navigation__background--art {
+    background-image: radial-gradient(#7f9cec, #2c48e7); }
   @media only screen and (max-width: 56.25em) {
-    .navigation__background {
+    .navigation__background, .navigation__background--art {
       top: 4.5rem;
       right: 4.5rem; } }
   @media only screen and (max-width: 37.5em) {
-    .navigation__background {
+    .navigation__background, .navigation__background--art {
       top: 3.5rem;
       right: 3.5rem; } }
 
@@ -1293,7 +1295,7 @@ body {
   color: #1c95c5;
   transform: translateX(1rem); }
 
-.navigation__checkbox:checked ~ .navigation__background {
+.navigation__checkbox:checked ~ .navigation__background, .navigation__checkbox:checked ~ .navigation__background--art {
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {

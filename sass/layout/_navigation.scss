@@ -36,7 +36,10 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-
+        &--art {
+            @extend .navigation__background;
+            background-image: radial-gradient($color-secondary-light, $color-secondary-dark);
+        }
         @include respond (tab-port) {
             top: 4.5rem;
             right: 4.5rem;
