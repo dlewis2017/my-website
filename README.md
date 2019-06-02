@@ -11,3 +11,8 @@ https://www.davidlewisma.com
 - Navigate to home directory and run `npm install` (may need to run `npm install -g live-server`)
 - Navigate to sass/ where main.scss is and run `npm run start`.
 
+## To Do
+- Web mobile background bug
+- Microsoft Edge
+- Web And More Section
+- About wording
