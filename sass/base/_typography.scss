@@ -65,6 +65,9 @@ body {
     &--alt {
         @extend .heading-secondary;
         background-image: linear-gradient(to right, $color-gray-light-1, $color-gray-dark-2);
+        @include respond(phone) {
+            display:block;
+        }
     }
 }
 
