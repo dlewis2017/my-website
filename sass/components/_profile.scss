@@ -17,6 +17,8 @@
 
     @include respond(phone) {
         transform: skewX(0);
+        padding: 6rem;
+        text-align: center;
     }
 
     &>* {
@@ -43,7 +45,10 @@
         }
 
         @include respond(phone) {
-            transform: translateX(-3rem) skewX(0);
+            float: none;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 5rem;
         }
     }
 

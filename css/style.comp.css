@@ -537,7 +537,9 @@ body {
       padding-left: 7rem; } }
   @media only screen and (max-width: 37.5em) {
     .profile {
-      transform: skewX(0); } }
+      transform: skewX(0);
+      padding: 6rem;
+      text-align: center; } }
   .profile__shape {
     width: 20rem;
     height: 20rem;
@@ -555,7 +557,10 @@ body {
         border-radius: none; } }
     @media only screen and (max-width: 37.5em) {
       .profile__shape {
-        transform: translateX(-3rem) skewX(0); } }
+        float: none;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 5rem; } }
   .profile__img {
     height: 100%;
     transform: translateX(1rem) scale(1.4);
